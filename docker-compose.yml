@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  frontend:
+    build:
+      context: frontend
+    ports:
+      - 3000:3000
+
+  api:
+    build:
+      context: api
+    hostname: "api"
+    ports:
+      - 5000:5000
