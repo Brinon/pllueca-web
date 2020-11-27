@@ -4,12 +4,14 @@ services:
   frontend:
     build:
       context: frontend
+    image: pllueca:frontend
     ports:
       - 3000:3000
 
   api:
     build:
       context: api
+    image: pllueca:api
     hostname: "api"
     ports:
       - 5000:5000
